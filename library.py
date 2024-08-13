@@ -54,9 +54,8 @@ class Library:
         name = input("Enter name of member: ")
         new_id = Library.get_next_id(members)
         new_member = Member(name, new_id)
-        new_member = {"id": new_id, "name": name,"borrowed_books":"''"}
+        new_member = {"id": new_id, "name": name,"borrowed_books":[]}
         members.append(new_member)
-
                 
     def add_book():
         ISBN = input("Enter ISBN")
@@ -118,28 +117,38 @@ class Member(Library):
         for member in members:
             if member['id']==memberId:
                 thisname = member['name']
-                thismember = member
-                added = "9876"
+                self = member
                 break
         if thisname=="":
             print("Could not find this Member ID #.  Cancelling ...")
             return
         thisISBN = input(f"Welcome {thisname}.  Enter ISBN for book you want to borrow")
+        if thisISBN =="":
+            print("You didn't enter an ISBN.  Cancelling.")
+            return
+        
+        bookfound=False
         for book in books:
             if book['ISBN'] == thisISBN:
+                bookfound = True
                 if book['copies']>0:
                     takeout = input("{book.title} is available.  Do you want to take it out? Y/N ").upper()
                     if takeout=='Y':
-                        for member in members:
-                            if member['id']==memberId:
-                                member['borrowed_books'].extend("["+thisISBN+"]")
-                                print('done')
-                                book['copies'] =- 1
+                        self['borrowed_books'].append(thisISBN)
+                        book['copies'] =- 1
+                    else:
+                        input(f"{book['title']} is borrowed by another member. A Copy is not available. Press enter to continue.")
+                              
+        if not bookfound:
+            input(f"Book with ISBN {thisISBN} is not in this library.  Press enter to continue.")
         
-    def return_book(self, book):
-        if book in self.borrowed_books:
-            self.borrowed_books.remove(book)
-
+    def return_book():
+        memberId = input("Enter your Library ID# ")
+        for member in members:
+            if member["id"] == int(memberId):      
+                thisMember = member
+                thisISBN = input(f"Welcome {member['name']}.  Enter ISBN of the book you are returning")
+                
     def listdata():
         for data in members:
             print(f"ID: {data['id']:5} | Name: {data['name']:30}")
@@ -158,17 +167,28 @@ load_from_file(booksFile,books)
 
 choice=" "
 while choice.upper() != "X":    
-    choice = input("""Library Management System\n\nMENU\n1 - Add Member\n2 - Add Book\n3 - Remove Book\n4 - Borrow Book\n5 - Return book\n6 - View Members\n7.Remove Member\nX Exit""")
+    choice = input("""Library Management System
+    MENU
+    1 - Add Member
+    2 - Add Book
+    3 - Remove Book
+    4 - Borrow Book
+    5 - Return Book
+    6 - View Members
+    7 - Remove Member
+    X - Exit""")
+
     if choice=="1":
         Library.add_member();
     if choice=="2":
         Book.add_book();
     if choice=="4":
         Member.borrow_book();
+    if choice=="5":
+        Member.return_book();
     if choice=="6":
         Member.listdata()
     if choice=="7":
         Member.remove()
     if choice.upper()=="X":
-        Library.savefile()
-        
+        Library.savefile()       
