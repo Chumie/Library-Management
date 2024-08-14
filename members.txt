@@ -1,3 +1,2 @@
-{"id": 1, "name": "Menachem Cohen", "borrowed_books": ["9876"]}
-{"id": 2, "name": "Marcos Haschel", "borrowed_books": []}
-{"id": 3, "name": "Yitty Steinmetz", "borrowed_books": []}
+{"id": 1, "name": "Nechama Haschel", "borrowed_books": ["9876"]}
+{"id": 2, "name": "Perel Ausch", "borrowed_books": []}

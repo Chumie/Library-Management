@@ -1,1 +1,0 @@
-{"title": "Living Emunah", "author": "RAbbi David AShear", "ISBN": "9876", "copies": 10}
