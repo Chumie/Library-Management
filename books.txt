@@ -1,0 +1,26 @@
+{
+    "9876": {
+        "title": "f",
+        "author": "f",
+        "ISBN": "9876",
+        "copies": 4
+    },
+    "123": {
+        "title": "AS long as i live",
+        "author": "rabbi k",
+        "ISBN": "123",
+        "copies": 4
+    },
+    "345": {
+        "title": "very good",
+        "author": "rabbi k",
+        "ISBN": "345",
+        "copies": 5
+    },
+    "Mother knows best": {
+        "title": "mrs. miriam adahan",
+        "author": "2",
+        "ISBN": "Mother knows best",
+        "copies": 2
+    }
+}
