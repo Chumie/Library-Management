@@ -1,3 +1,6 @@
-{"id": 1, "name": "Nechama Haschel", "borrowed_books": ["9876"]}
-{"id": 4, "name": "Chany Haschel", "borrowed_books": []}
-{"id": 5, "name": "Perela moskowitz", "borrowed_books": []}
+{"id": 1, "name": "Nechama Haschel", "borrowed_books": ["9876", "9876"]}
+{"id": 5, "name": "Perela moskowitz", "borrowed_books": ["345678764", "345678764", "345678764"]}
+{"id": 6, "name": "", "borrowed_books": []}
+{"id": 7, "name": "Devorah Stein", "borrowed_books": []}
+{"id": 8, "name": "Leah Weinreb", "borrowed_books": []}
+{"id": 9, "name": "Rochel Mandel", "borrowed_books": []}

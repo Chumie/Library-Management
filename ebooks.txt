@@ -1,0 +1,20 @@
+{
+    "1": {
+        "title": "As long as I live",
+        "author": "RAbbi",
+        "ISBN": "345",
+        "format": "EPUB"
+    },
+    "2": {
+        "title": "Lovinv you",
+        "author": "reeee",
+        "ISBN": "987",
+        "format": "xls"
+    },
+    "3": {
+        "title": "",
+        "author": "",
+        "ISBN": "",
+        "format": "Other format"
+    }
+}

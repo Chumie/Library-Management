@@ -3,13 +3,13 @@
         "title": "f",
         "author": "f",
         "ISBN": "9876",
-        "copies": 4
+        "copies": 1
     },
     "123": {
         "title": "AS long as i live",
         "author": "rabbi k",
         "ISBN": "123",
-        "copies": 4
+        "copies": 1
     },
     "345": {
         "title": "very good",
@@ -20,7 +20,13 @@
     "Mother knows best": {
         "title": "mrs. miriam adahan",
         "author": "2",
-        "ISBN": "Mother knows best",
+        "ISBN": "599",
         "copies": 2
+    },
+    "345678764": {
+        "title": "fewe",
+        "author": "polik",
+        "ISBN": "345678764",
+        "copies": 6
     }
 }
