@@ -27,8 +27,7 @@ def load_from_files():
                 try:
                     data = json.loads(file_contents)
                     books.update(data)
-                except json.JSONDecodeError:
-                    print("Error: Invalid JSON format in the file.")
+                except: print("Error: Invalid JSON format in the file.")
             else:
                 print("File is empty.")
             
@@ -91,12 +90,12 @@ class Library:
             input("You did not enter a name.  Cancelling.  Press enter to continue.")
             return 
         new_id = Library.get_next_id(members)
-        new_member = Member(name, new_id)
+        #new_member = Member(name, new_id)
         new_member = {"id": new_id, "name": name,"borrowed_books":[]}
         members.append(new_member)
         input(f"{name}'s member ID# is {new_id}.  Press enter to continue. ")
                 
-    def add_book():
+       def add_book():
         ISBN = input("Enter ISBN: ")
         if ISBN =="":
             input("Must enter an ISBN to add a book. Cancelling...  Press enter to continue.")
@@ -298,7 +297,7 @@ class Member(Library):
         if thisISBN in member['borrowed_books']:
             book = books[thisISBN] 
             self['borrowed_books'].remove(thisISBN)
-            book['copies'] =+ 1
+            book['copies'] += 1
         else:
             print(f"You do not have ISBN# {thisISBN} out.")
             

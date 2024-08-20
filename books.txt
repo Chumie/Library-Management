@@ -1,32 +1,8 @@
 {
-    "9876": {
-        "title": "f",
-        "author": "f",
-        "ISBN": "9876",
-        "copies": 1
-    },
-    "123": {
-        "title": "AS long as i live",
-        "author": "rabbi k",
-        "ISBN": "123",
-        "copies": 1
-    },
-    "345": {
-        "title": "very good",
-        "author": "rabbi k",
-        "ISBN": "345",
-        "copies": 5
-    },
-    "Mother knows best": {
-        "title": "mrs. miriam adahan",
-        "author": "2",
-        "ISBN": "599",
-        "copies": 2
-    },
-    "345678764": {
-        "title": "fewe",
-        "author": "polik",
-        "ISBN": "345678764",
-        "copies": 6
+    "1234": {
+        "title": "As long as i live",
+        "author": "Aharon Margulis",
+        "ISBN": "1234",
+        "copies": 0
     }
 }

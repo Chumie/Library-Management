@@ -1,20 +1,26 @@
 {
     "1": {
-        "title": "As long as I live",
-        "author": "RAbbi",
-        "ISBN": "345",
-        "format": "EPUB"
+        "title": "Python Programming",
+        "author": "Fabrizio Romano",
+        "ISBN": "",
+        "format": "PDF"
     },
     "2": {
-        "title": "Lovinv you",
-        "author": "reeee",
-        "ISBN": "987",
-        "format": "xls"
+        "title": "Programming: Principles and Practice Using C++",
+        "author": "Bjarne Stroustrup",
+        "ISBN": "",
+        "format": "PDF"
     },
     "3": {
-        "title": "",
-        "author": "",
+        "title": "How to Win Friends & Influence People",
+        "author": "Dale Carnegie",
         "ISBN": "",
-        "format": "Other format"
+        "format": "EPUB"
+    },
+    "4": {
+        "title": "AS long as i live",
+        "author": "justin",
+        "ISBN": "12354654",
+        "format": "EPUB"
     }
 }
